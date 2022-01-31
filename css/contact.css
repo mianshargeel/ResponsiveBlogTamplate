@@ -1,0 +1,29 @@
+.contact-content {
+    margin-top: 10px;
+    height: 100vh;
+    padding: 2px;
+    /* background-color: rgb(197, 197, 238); */
+    position: relative;
+    overflow: hidden;
+    /* we are using overflow hidden becouse over position is relative and size of image big */
+}
+
+.contact-content::after {
+    content: "";
+    background-image: url("../img/fea2.jpg");
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: inherit;
+    opacity: 0.28;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    z-index: -1;
+    /* ( z-index ) is a CSS property that defines the order of overlapping HTML elements. Elements with a higher index will be placed on top of elements with a lower index. Note: Z index only works on positioned elements ( position:absolute , position:relative */
+    /* in our content we have used bg-image through absolute position and we want to sgow our form-inputs and button over it that why we use z-index: -1 */
+}
+
+.contact-form {}

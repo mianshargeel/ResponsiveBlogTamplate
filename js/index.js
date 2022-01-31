@@ -1,0 +1,1 @@
+console.log('Medium is a place to write, read, and connect');
